@@ -7,12 +7,12 @@
         	            <div class="card">
 
 <table class="table table-hover  table-striped" id="donors_table" >
-	<thead>
+	<thead style="background-color: #06195E; color: #FFFFFF">
 		<tr>
-			<th>Nombre</th>
-			<th>Email</th>
-			<th>Llamadas</th>
-			<th>Borrar</th>
+			<th>שם   </th>
+			<th>דוא"ל  </th>
+			<th>שיחות שבוצעו  </th>
+			<th>למחוק משתמש  </th>
 		</tr>
 	</thead>
 	<tbody>

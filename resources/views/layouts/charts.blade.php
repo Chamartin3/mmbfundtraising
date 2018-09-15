@@ -8,12 +8,12 @@
 	</div>
 	<div class="col">
 
-			<div class="card text-white bg-info o-hidden h-80">
+			<div class="card text-white o-hidden h-80" style="background-color: #06195E">
                 <div class="card-body">
                   <div class="card-body-icon">
-                    <i class="fas fa-file-medical-alt"></i>
+                    <i class="fas fa-phone"></i>
                   </div>
-                  <div class="mr-5">Calls</div>
+                  <div class="mr-5">שיחות שבוצעו </div>
                 </div>
                 <div>
                 	<a  class="text-white" href="{{ route('calls') }}"">
@@ -26,12 +26,12 @@
 	</div>
 	<div class="col">
 		
-			<div class="card text-white bg-info o-hidden h-80">
+			<div class="card text-white  o-hidden h-80" style="background-color: #06195E">
                 <div class="card-body">
                   <div class="card-body-icon">
-                    <i class="fas fa-file-medical-alt"></i>
+                    <i class="fas fa-money-bill-wave"></i>
                   </div>
-                  <div class="mr-5">Total Colaborations</div>
+                  <div class="mr-5">סה"כ תרומות  </div>
                 </div>
                 <div>
                 	<h1 class="mb-3 ml-3"> {{App\Donor::TotalColected()  }}</h1>
@@ -69,8 +69,7 @@
 					'ן מענה  ',
 					'רם! ',
 					'ין מענה',
-					'לא מעוניין ',
-					'בלי להתקשר '
+					'לא מעוניין '
 				]
 			},
 			options: {

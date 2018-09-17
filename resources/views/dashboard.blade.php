@@ -54,6 +54,11 @@
 
     $('#donors_table').DataTable({
         language:   idioma,
+        dom: 'Bfrtip',
+        buttons: [
+            'copy', 'excel', 'pdf', 'print'
+        ]
+    
     });
 </script>
 @endsection

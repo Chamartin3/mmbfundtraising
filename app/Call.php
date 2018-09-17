@@ -10,7 +10,7 @@ class Call extends Model
 
       public function user()
       {     
-            return $this->BelongsTo(User::class);
+            return $this->BelongsTo(User::class)->withTrashed();
             
       }
 

@@ -67,6 +67,7 @@ class GeneralController extends Controller
     {
         $user = User::find($id);
         $user->delete();
+        
         return redirect()
         ->action('GeneralController@userlist');
     }    

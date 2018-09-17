@@ -5,11 +5,12 @@ use Illuminate\Database\Eloquent\Model;
 
 class Donor extends Model
 {
+
       protected $guarded = [];
 
       public function user()
       {     
-            return $this->BelongsTo(User::class);
+            return $this->BelongsTo(User::class)->withTrashed();
             
       }
 

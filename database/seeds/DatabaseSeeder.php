@@ -37,21 +37,21 @@ class DatabaseSeeder extends Seeder
         ]);
 
     	Donor::create([
-    	    `name`			=>"אלחי בית אל ",
-			`tel`			=>"050-3870132",
-			`prev_amount`	=>260,
-			`email`			=>"eybetel@gmail.com",
-			`origen`		=>"תורמי עבר  ",
-			`tipo`			=>"תורמי עבר  "
+    	    "name"			=>"אלחי בית אל ",
+			"tel"			=>"050-3870132",
+			"prev_amount"	=>260,
+			"email"		=>"eybetel@gmail.com",
+			"origen"		=>"תורמי עבר  ",
+			"tipo"			=>"תורמי עבר  "
     	 ]);
 
     	Donor::create([
-    	    `name`			=>"אריאל משילקר  ",
-			`tel`			=>"050-7876239",
-			`prev_amount`	=>100,
-			`email`			=>"amihaim99@gmail.com",
-			`origen`		=>"תורמי עבר  ",
-			`tipo`			=>"תורמי עבר  "
+    	    "name"			=>"אריאל משילקר  ",
+			"tel"			=>"050-7876239",
+			"prev_amount"	=>100,
+			"email"			=>"amihaim99@gmail.com",
+			"origen"		=>"תורמי עבר  ",
+			"tipo"			=>"תורמי עבר  "
     	]);
 
 

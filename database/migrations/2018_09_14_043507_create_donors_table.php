@@ -15,7 +15,7 @@ class CreateDonorsTable extends Migration
     {
         Schema::create('donors', function (Blueprint $table) {
             $table->charset = 'utf8';
-            $table->collation = 'utf8';
+            $table->collation = 'utf8_unicode_ci';
             $table->engine = 'InnoDB';            
             $table->increments('id');
             $table->timestamps();

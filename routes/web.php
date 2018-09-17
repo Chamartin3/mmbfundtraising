@@ -23,20 +23,28 @@ Route::group(['middleware' => 'auth'], function ()
 	{
 		 return view('welcome');
 	});
+
+	Route::group(['middleware' => 'userlevel'], function (){
+		Route::get('/users', 'GeneralController@userlist')->name('users');
+		Route::get('/users/delete{id}', 'GeneralController@userdelete')->name('userdelete');		
+		Route::get('/users/edit{id}', 'GeneralController@useredit')->name('useredit');
+		Route::get('/calls/{id?}', 'GeneralController@calls')->name('calls');
+		Route::get('/donations', 'GeneralController@all_donations')->name('all_donations');
+		Route::get('/dashboard', 'GeneralController@list')->name('lista');
+	});
+
+
 	Route::get('/form', 'GeneralController@form')->name('registro');
-	Route::get('/users', 'GeneralController@userlist')->name('users');
-	Route::get('/users/delete{id}', 'GeneralController@userdelete')->name('userdelete');
-
 	Route::post('/form/donation{id}', 'GeneralController@donation')->name('donation');
-
 	Route::get('/donor/{id}', 'GeneralController@donor')->name('donor');
 	Route::get('/form/later{id}', 'GeneralController@later')->name('later');
 	Route::get('/form/no{id}', 'GeneralController@no')->name('no');
 	Route::get('/form/unresponded{id}', 'GeneralController@unresponded')->name('unresponded');
 	Route::get('/form/stopcalling{id}', 'GeneralController@stopcalling')->name('stopcalling');
 
-	Route::get('/calls/{id?}', 'GeneralController@calls')->name('calls');
 
-	Route::get('/dashboard', 'GeneralController@list')->name('lista');
+
+
+
 });
 

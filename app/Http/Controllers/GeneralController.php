@@ -56,6 +56,13 @@ class GeneralController extends Controller
         return view('calls',['calls'=>$calls]);
     }
 
+        public function all_donations()
+    {
+        $calls=Call::where('result',2)->get();   
+        return view('calls',['calls'=>$calls]);
+    }
+
+
     public function userdelete($id)
     {
         $user = User::find($id);
@@ -64,6 +71,20 @@ class GeneralController extends Controller
         ->action('GeneralController@userlist');
     }    
 
+
+
+    public function useredit($id)
+    {
+        $user = User::find($id);
+        if($user->type==1){
+            $user->type=2;
+        }else{
+            $user->type=1;
+        }
+        $user->save();
+        return redirect()
+        ->action('GeneralController@userlist');
+    }    
 
 
 

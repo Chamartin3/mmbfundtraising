@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>mmb fundraising</title>
 
     <!-- Scripts -->
 
@@ -65,14 +65,14 @@
                             </li>
                         
                         @else
-                            <li class="nav-item">
+                        @if(Auth::user()->type>1)
+                        <li class="nav-item">
                                 <a class="nav-link" href="{{ route('lista') }}">לוּחַ מַחווָנִים  </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('users') }}">משתמשים </a>
                             </li>
-
-
+                        @endif
 
 
                             <li class="nav-item dropdown">

@@ -35,4 +35,16 @@ class User extends Authenticatable
             return $this->hasMany(Call::class);
             
       }
+
+    public function tipo()
+      {     
+            if ($this->type==2) {
+                return '<h6> <span class="badge badge-secondary"> מנהל  </span></h6>';
+            }else{
+                return '<h6><span class="badge badge-info"> המתקשר   </span></h6>';          
+            };
+            
+      }
+
+
 }

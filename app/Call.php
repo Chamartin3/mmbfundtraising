@@ -41,11 +41,18 @@ class Call extends Model
                         break;
                     }
 
-
+            if ($this->result ==2) {
+              $monto=$this->donor->amount;
+            }else{
+              $monto='';
+            }
 
       	return '
       	      	  <div class="alert '.$alertType.'" role="alert">
-        	        	<div class="row"> '.$this->status().'
+        	        	<div class="row">
+                    <div class="col">'.$this->status().'
+                    <h5><p>'.$monto.'</p></h5>
+                    </div>
         	        			<div class="col">
         	        			<strong>המתקשר  </strong><p>'.$this->user->name.'</p>	
         	        			</div>

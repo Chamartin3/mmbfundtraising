@@ -16,12 +16,11 @@
                   <div class="mr-5">שיחות שבוצעו </div>
                 </div>
                 <div>
-                	<a  class="text-white" href="{{ route('calls') }}"">
+                	<a  class="text-white" href="{{ route('calls') }}">
                 	<h1 class="mb-3 ml-3"> {{App\Donor::TotalCalls()}} </h1>
                 </a>
                 </div>          
               </div>
-		
 
 	</div>
 	<div class="col">
@@ -34,7 +33,9 @@
                   <div class="mr-5">סה"כ תרומות  </div>
                 </div>
                 <div>
+                	<a  class="text-white" href="{{ route('all_donations') }}">
                 	<h1 class="mb-3 ml-3"> {{App\Donor::TotalColected()  }}</h1>
+                </a>
                 </div>
                </div>
 

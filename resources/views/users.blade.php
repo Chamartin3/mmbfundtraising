@@ -12,7 +12,11 @@
 			<th>שם   </th>
 			<th>דוא"ל  </th>
 			<th>שיחות שבוצעו  </th>
+			<th>  הקלד   </th>			
+			<th>   הרשאות שינוי  </th>
 			<th>למחוק משתמש  </th>
+	
+
 		</tr>
 	</thead>
 	<tbody>
@@ -21,7 +25,11 @@
 			<td>{{$u->name}}</td>
 			<td>{{$u->email}}</td>
 			<td><a  href="{{ route('calls',$u->id) }}" >{{count($u->calls)}} </a> </td>
+			<td>{!!$u->tipo()!!} </td>			
+			<td><a  href="{{ route('useredit',$u->id) }}" class="botborr btn btn-warning"><i class="fas fa-pencil-alt"></i></td>
 			<td><a  href="{{ route('userdelete',$u->id) }}" class="botborr btn btn-danger"><i class="fas fa-trash"></i></td>
+
+
 		@endforeach
 </tr>
 

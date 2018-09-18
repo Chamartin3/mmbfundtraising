@@ -50,7 +50,7 @@
             "@php artisan package:discover"
         ],
         "compile":[
-            "composer --global config process-timeout 2000",  
+            "composer config --global process-timeout 2000",
             "php artisan migrate:fresh --seed --force"
  
 

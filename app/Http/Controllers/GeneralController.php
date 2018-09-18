@@ -106,7 +106,7 @@ class GeneralController extends Controller
 
         return redirect()
         ->action('GeneralController@form')
-        ->with('success', 'La llamada ha sido registrada');
+        ->with('success', '  השיחה נרשמה  ');
     }   
 
     public function donation($id, Request $Request)
@@ -128,7 +128,7 @@ class GeneralController extends Controller
 
         return redirect()
         ->action('GeneralController@form')
-        ->with('success', 'La donacion ha sido registrada');
+        ->with('success', ' השיחה נרשמה  ');
     }
 
         public function later($id)
@@ -147,7 +147,7 @@ class GeneralController extends Controller
 
         return redirect()
         ->action('GeneralController@form')
-        ->with('success', 'La llamada ha sido registrada');
+        ->with('success', ' השיחה נרשמה   ');
     }
 
  
@@ -168,6 +168,6 @@ class GeneralController extends Controller
 
         return redirect()
         ->action('GeneralController@form')
-        ->with('success', 'La llamada ha sido registrada');
+        ->with('success', 'השיחה נרשמה  ');
     }
 }

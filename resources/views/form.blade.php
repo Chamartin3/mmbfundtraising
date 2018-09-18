@@ -9,7 +9,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header"><h1>{{$donor->name}}</h1></div>
+                <div class="card-header text-right"><h1>{{$donor->name}}</h1></div>
                 <div class="card-body text-center">
                     @if(count($donor->calls)!==0) משלם המסים הזה כבר נקרא  @endif
                         @forelse($donor->calls as $call)
@@ -18,7 +18,7 @@
                             @endforelse
                     
                     
-                	<div class="row">
+                	<div class="row text-right">
                 		  <div class="col">
 
                             <strong>המומלץ על ידי  </strong><p>{{$donor->origen}}</p>    {{-- ¨Recomendado por --}} 

@@ -4,7 +4,7 @@
 
 
 @if (session('success'))
-<div id="snackbar"> ¡Bien!  {{ session('success') }}</div>
+<div id="snackbar"> בהצלחה!   {{ session('success') }}</div>
 
 <script>
 var success=true;

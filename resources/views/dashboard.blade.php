@@ -11,7 +11,7 @@
 			<th>שם </th>
 			<th>רשימה  </th>
 			<th>טמספר טלפון  </th>
-			<th> דוא"ל   </th>
+
 			<th>מומלץ על ידי  </th>
 			<th style="width: 10%">מַצָב  </th>
 			<th style="width: 10%">אדם שקרא  </th>
@@ -23,7 +23,7 @@
 			<td> <a href="{{ route('donor', $d->id) }}"> {{$d->name}}</a></td>
 			<td>{{$d->origen}}</td>
 			<td>{{$d->tel}}</td>
-			<td>{{$d->email}}</td>
+
 			<td>{{$d->tipo}}</td>
 			<td>{!!$d->status()!!}</td>
 			<td>{!!$d->caller()!!}</td>

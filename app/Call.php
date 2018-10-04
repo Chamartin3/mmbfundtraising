@@ -57,7 +57,7 @@ class Call extends Model
         	        			<strong>המתקשר  </strong><p>'.$this->user->name.'</p>	
         	        			</div>
         	        			<div class="col">
-        	        			<strong>משלם המסים  </strong><p>'.$this->donor->name.'</p>	
+        	        			<strong> שם התורם  </strong><p>'.$this->donor->name.'</p>	
         	        			</div>
         	        			<div class="col">
         	        			<strong>יום </strong><p>'.$this->created_at->format('d-M-Y').'</p>	

@@ -33,7 +33,7 @@
                 	<div class="row text-right">
                 		  <div class="col">
 
-                            <strong> הומלץ   </strong><p>{{$donor->origen}}</p>    {{-- ¨Recomendado por --}} 
+                            <strong> הומלץ על ידי   </strong><p>{{$donor->origen}}</p>    {{-- ¨Recomendado por --}} 
                             </div>
                          
                             @if($donor->prev_amount!==null)
@@ -75,7 +75,7 @@
                 </div>
                     <div class="col text-center respoboton">
                     <a class="btn btn-success"  name=contribuye data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
-                        תרם!
+                       !תרם
                     </a>
                 </div>
 
@@ -87,8 +87,8 @@
 				        <form id="donationform" action="{{ route('donation',$donor->id) }}" method="POST">
 				        	<div class="row form-inline justify-content-end">
 				        		@csrf
-                 				 <input type="number" class="form-control" id="monto" name="monto"  placeholder="ררומה  " required>
-                 				 <button class="btn btn-success  enviarsub"  type="submit"> הרשם</button> 
+                 				 <input type="number" class="form-control" id="monto" name="monto"  placeholder="תרומה  " required>
+                 				 <button class="btn btn-success  enviarsub"  type="submit"> הרש    </button> 
                  				 
                  			</div>
 				        </form>
@@ -114,13 +114,13 @@ $('.enviar').on('click', function(event) {
     if (confirmacion) {
      event.preventDefault();
      swal({
-          title: 'האם אתה בטוח? ',
+          title: '?האם אתה בטוח ',
           type: 'warning',
           showCancelButton: true,
           confirmButtonColor: '#03D617',
           cancelButtonColor: '#d33',
           cancelButtonText: 'ביטול ',
-          confirmButtonText: 'לאשר  '
+          confirmButtonText: '!אישור  '
         }).then((result) => {
           if (result.value) {
             confirmacion=false;

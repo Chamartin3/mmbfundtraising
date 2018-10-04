@@ -81,7 +81,7 @@ class Call extends Model
                         </span></h5>';
                         break;
                   case 2:
-                        return '<h5><span class="badge badge-success">תרם!  </span>
+                        return '<h5><span class="badge badge-success">!תרם  </span>
                         <br>
                         <span class="badge badge-success">'.$this->amount .'</span></h5>';
 
@@ -90,7 +90,7 @@ class Call extends Model
                         return '<h5><span class="badge badge-info">אולי בעתיד </span></h5>';
                         break;
                   case 4:
-                        return '<h5><span class="badge badge-danger">  לא מעוניין</span></h5>';
+                        return '<h5><span class="badge badge-danger">  לא מעוניין  </span></h5>';
                         break;
       
             }

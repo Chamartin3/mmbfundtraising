@@ -9,12 +9,12 @@
 	<thead style="background-color: #06195E; color: #FFFFFF">
 		<tr>
 			<th>שם </th>
-			<th>רשימה  </th>
-			<th>טמספר טלפון  </th>
+			<th> מקור  </th>
+			<th> מספר טלפון  </th>
 
-			<th>מומלץ על ידי  </th>
+
 			<th style="width: 10%">מַצָב  </th>
-			<th style="width: 10%">אדם שקרא  </th>
+			<th style="width: 10%"> חמליסט   <th>
 		</tr>
 	</thead>
 	<tbody>
@@ -24,7 +24,7 @@
 			<td>{{$d->origen}}</td>
 			<td>{{$d->tel}}</td>
 
-			<td>{{$d->tipo}}</td>
+	
 			<td>{!!$d->status()!!}</td>
 			<td>{!!$d->caller()!!}</td>
 		@endforeach

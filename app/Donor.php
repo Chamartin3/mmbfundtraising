@@ -19,7 +19,7 @@ class Donor extends Model
             if ($this->status!==0) {
                   return $this->user->name;
       	}else{
-      	     return "בלי להתקשר ";
+      	     return "טרם נוצר קשר  ";
       	}
       	
       }
@@ -28,7 +28,8 @@ class Donor extends Model
       {
             switch ($this->status) {
                   case 0:
-                        return '<h5><span class="badge badge-dark">בלי להתקשר 
+                        return '<h5><span class="badge badge-dark">
+                        טרם נוצר קשר
                         </span></h5>';
                         break;
                   case 1:

@@ -57,6 +57,7 @@ class Call extends Model
         	        			<strong>המתקשר  </strong><p>'.$this->user->name.'</p>	
         	        			</div>
         	        			<div class="col">
+                        
         	        			<strong> שם התורם  </strong><p>'.$this->donor->name.'</p>	
         	        			</div>
         	        			<div class="col">

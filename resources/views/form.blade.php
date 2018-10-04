@@ -88,7 +88,7 @@
 				        	<div class="row form-inline justify-content-end">
 				        		@csrf
                  				 <input type="number" class="form-control" id="monto" name="monto"  placeholder="תרומה  " required>
-                 				 <button class="btn btn-success  enviarsub"  type="submit"> הרש    </button> 
+                 				 <button class="btn btn-success  enviarsub"  type="submit">רשום</button> 
                  				 
                  			</div>
 				        </form>
